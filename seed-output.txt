@@ -1,0 +1,6 @@
+Loaded Prisma config from prisma.config.ts.
+
+Running seed command `npx tsx prisma/seed.ts` ...
+Γ£à Seed data created successfully!
+
+The seed command has been executed.

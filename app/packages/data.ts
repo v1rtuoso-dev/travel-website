@@ -1,0 +1,72 @@
+export const packages = [
+    {
+        name: "Khám Phá Việt Nam",
+        duration: "5 ngày 4 đêm",
+        price: 8900000,
+        originalPrice: 12000000,
+        rating: 4.9,
+        groupSize: "10-25 người",
+        destinations: "Hà Nội - Hạ Long - Ninh Bình",
+        color: "from-cyan to-blue-600",
+        popular: true,
+        includes: [
+            "Vé máy bay khứ hồi",
+            "Khách sạn 4 sao",
+            "Ăn sáng tại khách sạn",
+            "Xe đưa đón sân bay",
+            "Hướng dẫn viên tiếng Việt",
+            "Bảo hiểm du lịch",
+            "Vé tham quan",
+        ],
+        excludes: ["Chi phí cá nhân", "Tiền tip"],
+    },
+    {
+        name: "Thiên Đường Biển Đảo",
+        duration: "4 ngày 3 đêm",
+        price: 6500000,
+        originalPrice: 8500000,
+        rating: 4.8,
+        groupSize: "15-30 người",
+        destinations: "Phú Quốc",
+        color: "from-orange-400 to-rose-500",
+        popular: false,
+        includes: [
+            "Vé máy bay khứ hồi",
+            "Resort 4 sao",
+            "Buffet sáng",
+            "Tour câu cá & lặn biển",
+            "Xe đưa đón",
+            "Bảo hiểm du lịch",
+        ],
+        excludes: ["Chi phí cá nhân", "Bữa trưa & tối", "Tiền tip"],
+    },
+    {
+        name: "Nhật Bản Mùa Hoa",
+        duration: "7 ngày 6 đêm",
+        price: 28500000,
+        originalPrice: 35000000,
+        rating: 4.9,
+        groupSize: "10-20 người",
+        destinations: "Tokyo - Osaka - Kyoto",
+        color: "from-violet-500 to-purple-700",
+        popular: false,
+        includes: [
+            "Vé máy bay khứ hồi",
+            "Khách sạn 4-5 sao",
+            "Ăn sáng & trưa",
+            "JR Pass 7 ngày",
+            "Hướng dẫn viên song ngữ",
+            "Bảo hiểm du lịch quốc tế",
+            "Visa Nhật Bản",
+        ],
+        excludes: ["Bữa tối", "Chi phí cá nhân", "Mua sắm"],
+    },
+];
+
+export function formatPrice(price: number) {
+    return new Intl.NumberFormat("vi-VN", {
+        style: "currency",
+        currency: "VND",
+        maximumFractionDigits: 0,
+    }).format(price);
+}

@@ -1,0 +1,9 @@
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+
+The SQLite database "dev.db" at "file:./dev.db" was successfully reset.
+
+Your database is now in sync with your Prisma schema. Done in 95ms
+
